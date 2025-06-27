@@ -1,44 +1,44 @@
-# Project Structure
+# プロジェクト構造
 
-This document outlines the directory structure of the AI-Powered Task Decomposition and Scheduling System.
+このドキュメントは、AIを活用したタスク分解およびスケジューリングシステムのディレクトリ構造を概説しています。
 
-## Root Directory
+## ルートディレクトリ
 
-- `LICENSE`: The MIT license file.
-- `README.md`: The main README file for the project.
-- `PROJECT_STRUCTURE.md`: This file, which outlines the project structure.
-- `backend/`: Contains the Node.js/Express backend application.
-- `frontend/`: Contains the React Native mobile application.
+- `LICENSE`：MITライセンスファイル。
+- `README.md`：プロジェクトの主要なREADMEファイル。
+- `PROJECT_STRUCTURE.md`：本ファイル。プロジェクト構造を概説しています。
+- `backend/`：Node.js/Expressバックエンドアプリケーションが含まれています。
+- `frontend/`：React Nativeモバイルアプリケーションが含まれています。
 
-## Backend (`/backend`)
+## バックエンド (`/backend`)
 
-The backend is a Node.js project using the Express framework.
+バックエンドはExpressフレームワークを使用するNode.jsプロジェクトです。
 
-- `node_modules/`: Directory for Node.js modules (dependencies).
-- `package.json`: Defines the project's dependencies and scripts.
-- `package-lock.json`: Records the exact versions of dependencies.
-- `.env.example`: An example file for environment variables.
-- `.gitignore`: Specifies files to be ignored by Git.
-- `src/`: The main source code directory.
-  - `controllers/`: Handles incoming requests and business logic.
-    - `projectController.js`: Manages project and task-related endpoints.
-    - `scheduleController.js`: Manages schedule-related endpoints.
-  - `database/`: Contains database connection and query logic.
-  - `routes/`: Defines the API routes.
-    - `projectRoutes.js`: Routes for project-related endpoints.
-    - `scheduleRoutes.js`: Routes for schedule-related endpoints.
-  - `services/`: For external API integrations (e.g., Gemini API, iCal parsing).
-  - `index.js`: The main entry point for the backend server.
+- `node_modules/`：Node.jsモジュール（依存関係）のディレクトリ。
+- `package.json`：プロジェクトの依存関係とスクリプトを定義します。
+- `package-lock.json`：依存関係の正確なバージョンを記録します。
+- `.env.example`：環境変数のサンプルファイル。
+- `.gitignore`：Gitによって無視されるファイルを指定します。
+- `src/`：主要なソースコードディレクトリ。
+  - `controllers/`：受信リクエストとビジネスロジックを処理します。
+    - `projectController.js`：プロジェクトおよびタスク関連のエンドポイントを管理します。
+    - `scheduleController.js`：スケジュール関連のエンドポイントを管理します。
+  - `database/`：データベース接続およびクエリロジックが含まれています。
+  - `routes/`：APIルートを定義します。
+    - `projectRoutes.js`：プロジェクト関連のエンドポイントのルート。
+    - `scheduleRoutes.js`：スケジュール関連のエンドポイントのルート。
+  - `services/`：外部API連携（例：Gemini API、iCalパース）用。
+  - `index.js`：バックエンドサーバーの主要なエントリーポイント。
 
-## Frontend (`/frontend`)
+## フロントエンド (`/frontend`)
 
-The frontend is a React Native application.
+フロントエンドはReact Nativeアプリケーションです。
 
-- `MotivatreeApp/`: The main directory for the React Native project.
-  - `android/`: Android-specific project files.
-  - `ios/`: iOS-specific project files.
-  - `node_modules/`: Directory for Node.js modules (dependencies).
-  - `package.json`: Defines the project's dependencies and scripts.
-  - `App.tsx`: The main application component.
-  - `index.js`: The entry point for the application.
-  - `...` (other configuration files for React Native, Babel, etc.)
+- `MotivatreeApp/`：React Nativeプロジェクトの主要なディレクトリ。
+  - `android/`：Android固有のプロジェクトファイル。
+  - `ios/`：iOS固有のプロジェクトファイル。
+  - `node_modules/`：Node.jsモジュール（依存関係）のディレクトリ。
+  - `package.json`：プロジェクトの依存関係とスクリプトを定義します。
+  - `App.tsx`：主要なアプリケーションコンポーネント。
+  - `index.js`：アプリケーションのエントリーポイント。
+  - `...`（React Native、Babelなどのその他の設定ファイル）
