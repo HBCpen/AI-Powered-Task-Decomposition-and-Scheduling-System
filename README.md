@@ -62,7 +62,7 @@
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/HBCpen/AI-Powered-Task-Decomposition-and-Scheduling-System
 
 # プロジェクトディレクトリに移動
 cd your-repository
